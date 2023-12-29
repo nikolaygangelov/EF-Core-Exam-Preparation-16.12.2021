@@ -202,7 +202,7 @@
                     BarrelLength = gunDTO.BarrelLength,
                     NumberBuild = gunDTO.NumberBuild,
                     Range = gunDTO.Range,
-                    GunType = (GunType)Enum.Parse(typeof(GunType), gunDTO.GunType),
+                    GunType = (GunType)Enum.Parse(typeof(GunType), gunDTO.GunType), //using "Parse" method to parse string enum "GunType"
                     ShellId = gunDTO.ShellId
                 };
 
