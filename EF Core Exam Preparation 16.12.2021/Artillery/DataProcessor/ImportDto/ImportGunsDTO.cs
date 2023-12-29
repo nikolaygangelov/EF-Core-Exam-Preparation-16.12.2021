@@ -30,9 +30,8 @@ namespace Artillery.DataProcessor.ImportDto
 
         [Required]
         [JsonProperty("GunType")]
-        //[EnumDataType(typeof(GunType))]
         [RegularExpression(@"^(Howitzer|Mortar|FieldGun|AntiAircraftGun|MountainGun|AntiTankGun)\b")]
-        public string GunType { get; set; }
+        public string GunType { get; set; } //format "string" in order to apply regex
 
         [Required]
         [JsonProperty("ShellId")]
